@@ -58,6 +58,20 @@ header p {
     margin: 0;
 }
 
+.collage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.collage > .img {
+    flex-basis: calc(50% - 1px);
+}
+
+.collage > .img:nth-child(1), 
+.collage > .img:nth-child(2) {
+    padding-bottom: 2px;
+}
 
 /** Caption styles */
 
@@ -86,7 +100,7 @@ figcaption {
 /** Images are allowed to be a little wider when broken out into their own container */
 
 .container.image {
-    max-width: 1200px;
+    /* max-width: 1000px; */
     padding: 0;
 }
 
