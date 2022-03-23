@@ -32,7 +32,7 @@ body,
 html {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Georgia', sans-serif;
 }
 
 
@@ -100,13 +100,55 @@ figcaption {
 /** Images are allowed to be a little wider when broken out into their own container */
 
 .container.image {
-    /* max-width: 1000px; */
+    /* max-width: 1200px; */
     padding: 0;
 }
 
 .container.image .caption,
 .container.image figcaption {
     padding: 5px 10px;
+}
+
+.dot {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+   position: absolute;
+}
+   
+.dot .inner,
+.dot .close {
+    display: none;
+}
+
+.pink {
+    background-color: rgba(255, 127, 80, 0.6)
+
+}
+
+.annotate {
+    position: relative;
+}
+
+#camera:not(.active) {
+    top: 20%;
+    left: 31%;
+}
+
+.dot.active {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.dot.active .inner,
+.dot.active .close {
+    display: block;
 }
 
 
